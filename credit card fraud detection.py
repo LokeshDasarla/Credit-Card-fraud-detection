@@ -7,7 +7,10 @@ from matplotlib import gridspec
 # Load the dataset from the csv file using pandas
 # best way is to mount the drive on colab and 
 # copy the path for the csv file
-data = pd.read_csv("creditcard.csv")
+#data = pd.read_csv("creditcard.csv") or u can go through the link 
+import kagglehub
+# Download latest version
+path = kagglehub.dataset_download("mlg-ulb/creditcardfraud")
 # Grab a peek at the data
 data.head()
 # Print the shape of the data
